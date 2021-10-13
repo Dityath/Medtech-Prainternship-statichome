@@ -1,10 +1,14 @@
-import Head from 'next/head'
+import Navbar from "../components/navbar";
+import HomeSecond from "../components/home/HomeSecond";
+import HomeFirst from "../components/home/HomeFirst";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-  
-    </div>
-  )
+    <>
+      <Navbar />
+      <HomeFirst />
+      <HomeSecond />
+      <div className="pb-56"></div>
+    </>
+  );
 }
-
