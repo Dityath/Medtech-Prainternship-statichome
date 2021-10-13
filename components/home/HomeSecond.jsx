@@ -30,7 +30,7 @@ export default class HomeSecond extends Component {
     };
 
     return (
-      <div className="w-full mt-32 px-24 flex justify-between">
+      <div className="w-full mt-36 px-24 mb-56 flex justify-between">
         <div className="ml-20 container w-96 h-96 shadow-2xl rounded-xl overflow-hidden">
           <Slider ref={(c) => (this.slider = c)} {...firstSlider}>
             <div>

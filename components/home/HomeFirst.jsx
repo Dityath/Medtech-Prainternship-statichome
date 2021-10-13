@@ -13,6 +13,7 @@ import {
   Input,
   InputGroup,
   InputRightElement,
+  Tooltip,
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/hooks";
 
@@ -90,14 +91,16 @@ const HomeFirst = () => {
               >
                 Mulai Belajar
               </Button>
-              <Button
-                colorScheme="whiteAlpha"
-                color="white"
-                variant="ghost"
-                _focus={{ boxShadow: "white" }}
-              >
-                Lihat Kelas
-              </Button>
+              <Tooltip label="Laman belum tersedia">
+                <Button
+                  colorScheme="whiteAlpha"
+                  color="white"
+                  variant="ghost"
+                  _focus={{ boxShadow: "white" }}
+                >
+                  Lihat Kelas
+                </Button>
+              </Tooltip>
             </div>
           </div>
           <Image
@@ -145,7 +148,8 @@ const HomeFirst = () => {
               Sedikit catatan, berikut hanyalah contoh UI dari keseluruhan
               website. Saya tidak memiliki waktu untuk membuat sistem backend,
               copywriting, atau bahkan pages lainnya. Sehingga tolong sangat
-              dimaklumi. Untuk Informasi silahkan tekan tombol masuk.
+              dimaklumi. Untuk Informasi selengkapnya silahkan tekan tombol
+              masuk.
             </div>
           </DrawerBody>
 

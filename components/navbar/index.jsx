@@ -12,6 +12,7 @@ import {
   Input,
   InputGroup,
   InputRightElement,
+  Tooltip,
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/hooks";
 
@@ -40,24 +41,32 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`font-inter bg-white px-24 py-3 flex justify-between items-center fixed w-full z-50 ${
-          navbar && "shadow-lg"
-        } 2xl:px-28 py-5`}
+        className={`transition duration-300 font-inter bg-white px-24 py-3 flex justify-between items-center fixed w-full z-50 ${
+          navbar && "shadow-xl"
+        } 2xl:px-28`}
       >
         <Image src="/images/logo-nav.png" width={133} height={29} alt="logo" />
         <div className="inline-flex gap-10 text-base items-center">
-          <a className="transition duration-200 hover:opacity-70 cursor-pointer">
-            Home
-          </a>
-          <a className="transition duration-200 hover:opacity-70 cursor-pointer">
-            Kelas
-          </a>
-          <a className="transition duration-200 hover:opacity-70 cursor-pointer">
-            Blog
-          </a>
-          <a className="transition duration-200 hover:opacity-70 cursor-pointer">
-            Hubungi Kami
-          </a>
+          <Tooltip label="Laman belum tersedia">
+            <a className="transition duration-200 hover:opacity-70 cursor-pointer">
+              Home
+            </a>
+          </Tooltip>
+          <Tooltip label="Laman belum tersedia">
+            <a className="transition duration-200 hover:opacity-70 cursor-pointer">
+              Kelas
+            </a>
+          </Tooltip>
+          <Tooltip label="Laman belum tersedia">
+            <a className="transition duration-200 hover:opacity-70 cursor-pointer">
+              Blog
+            </a>
+          </Tooltip>
+          <Tooltip label="Laman belum tersedia">
+            <a className="transition duration-200 hover:opacity-70 cursor-pointer">
+              Hubungi Kami
+            </a>
+          </Tooltip>
           <Button
             colorScheme="blackAlpha"
             color="blackAlpha.700"
@@ -107,7 +116,8 @@ const Navbar = () => {
               Sedikit catatan, berikut hanyalah contoh UI dari keseluruhan
               website. Saya tidak memiliki waktu untuk membuat sistem backend,
               copywriting, atau bahkan pages lainnya. Sehingga tolong sangat
-              dimaklumi. Untuk Informasi silahkan tekan tombol masuk.
+              dimaklumi. Untuk Informasi selengkapnya silahkan tekan tombol
+              masuk.
             </div>
           </DrawerBody>
 
