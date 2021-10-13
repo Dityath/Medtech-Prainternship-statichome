@@ -46,7 +46,7 @@ export default class HomeSecond extends Component {
         </div>
         <div className="w-1/2 text-right font-inter">
           <h3 className="text-5xl">Kampus impian berada di depan mata</h3>
-          <p className="my-10 mt-0 leading-7 text-gray-500">
+          <p className="my-10 mt-8 leading-7 text-gray-500">
             Telah membantu jutaan alumni dalam masuk universitas yang diingini
             pembangunan lorem lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Suspendisse varius enim in eros elementum tristique

@@ -26,7 +26,7 @@ export default class HomeFourth extends Component {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 2000,
     };
 
     return (
@@ -41,7 +41,7 @@ export default class HomeFourth extends Component {
             </p>
           </div>
           <Stack direction="row" spacing={4} justifyContent="end" width="100%">
-            <Tooltip label="Foto Sebelum">
+            <Tooltip label="Sebelumnya">
               <Button
                 colorScheme="red"
                 variant="ghost"
@@ -63,7 +63,7 @@ export default class HomeFourth extends Component {
                 </svg>
               </Button>
             </Tooltip>
-            <Tooltip label="Foto Selanjutnya">
+            <Tooltip label="Selanjutnya">
               <Button
                 colorScheme="red"
                 variant="ghost"
@@ -185,6 +185,13 @@ export default class HomeFourth extends Component {
               </div>
             </div>
           </Slider>
+        </div>
+        <div className="text-center mb-24">
+          <Tooltip label="Laman belum tersedia">
+            <Button variant="outline" _focus={{ boxShadow: "white" }}>
+              Lihat Pilihan Kelas Lainnya
+            </Button>
+          </Tooltip>
         </div>
       </>
     );
