@@ -15,6 +15,7 @@ import {
   Tooltip,
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/hooks";
+import Link from "next/link";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -47,26 +48,32 @@ const Navbar = () => {
       >
         <Image src="/images/logo-nav.png" width={133} height={29} alt="logo" />
         <div className="inline-flex gap-10 text-base items-center">
-          <Tooltip label="Laman belum tersedia">
+          <Link href="/">
             <a className="transition duration-200 hover:opacity-70 cursor-pointer">
               Home
             </a>
-          </Tooltip>
-          <Tooltip label="Laman belum tersedia">
-            <a className="transition duration-200 hover:opacity-70 cursor-pointer">
-              Kelas
-            </a>
-          </Tooltip>
-          <Tooltip label="Laman belum tersedia">
-            <a className="transition duration-200 hover:opacity-70 cursor-pointer">
-              Blog
-            </a>
-          </Tooltip>
-          <Tooltip label="Laman belum tersedia">
-            <a className="transition duration-200 hover:opacity-70 cursor-pointer">
-              Hubungi Kami
-            </a>
-          </Tooltip>
+          </Link>
+          <Link href="/404">
+            <Tooltip label="Laman belum tersedia">
+              <a className="transition duration-200 hover:opacity-70 cursor-pointer">
+                Kelas
+              </a>
+            </Tooltip>
+          </Link>
+          <Link href="/404">
+            <Tooltip label="Laman belum tersedia">
+              <a className="transition duration-200 hover:opacity-70 cursor-pointer">
+                Blog
+              </a>
+            </Tooltip>
+          </Link>
+          <Link href="/404">
+            <Tooltip label="Laman belum tersedia">
+              <a className="transition duration-200 hover:opacity-70 cursor-pointer">
+                Hubungi Kami
+              </a>
+            </Tooltip>
+          </Link>
           <Button
             colorScheme="blackAlpha"
             color="blackAlpha.700"
@@ -130,9 +137,11 @@ const Navbar = () => {
             >
               Cancel
             </Button>
-            <Button colorScheme="red" _focus={{ boxShadow: "white" }}>
-              Masuk
-            </Button>
+            <Link href="/404">
+              <Button colorScheme="red" _focus={{ boxShadow: "white" }}>
+                Masuk
+              </Button>
+            </Link>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>

@@ -17,6 +17,7 @@ import {
   Tooltip,
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/hooks";
+import Link from "next/link";
 
 const HomeFirst = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -98,16 +99,18 @@ const HomeFirst = () => {
               >
                 Mulai Belajar
               </Button>
-              <Tooltip label="Laman belum tersedia">
-                <Button
-                  colorScheme="whiteAlpha"
-                  color="white"
-                  variant="ghost"
-                  _focus={{ boxShadow: "white" }}
-                >
-                  Lihat Kelas
-                </Button>
-              </Tooltip>
+              <Link href="/404">
+                <Tooltip label="Laman belum tersedia">
+                  <Button
+                    colorScheme="whiteAlpha"
+                    color="white"
+                    variant="ghost"
+                    _focus={{ boxShadow: "white" }}
+                  >
+                    Lihat Kelas
+                  </Button>
+                </Tooltip>
+              </Link>
             </div>
           </div>
           <Image
@@ -169,9 +172,11 @@ const HomeFirst = () => {
             >
               Cancel
             </Button>
-            <Button colorScheme="red" _focus={{ boxShadow: "white" }}>
-              Masuk
-            </Button>
+            <Link href="/404">
+              <Button colorScheme="red" _focus={{ boxShadow: "white" }}>
+                Masuk
+              </Button>
+            </Link>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>
