@@ -30,20 +30,23 @@ export default class HomeSecond extends Component {
     };
 
     return (
-      <div className="w-full mt-36 px-24 mb-56 flex justify-between">
+      <div className="w-full mt-36 px-24 mb-52 flex justify-between">
         <div className="ml-20 container w-96 h-96 shadow-2xl rounded-xl overflow-hidden">
           <Slider ref={(c) => (this.slider = c)} {...firstSlider}>
             <div>
               <Image src="/images/slider/slider1.png" />
             </div>
             <div>
-              <Image src="/images/slider/slider1.png" />
+              <Image src="/images/slider/slider2.png" />
+            </div>
+            <div>
+              <Image src="/images/slider/slider3.png" />
             </div>
           </Slider>
         </div>
         <div className="w-1/2 text-right font-inter">
           <h3 className="text-5xl">Kampus impian berada di depan mata</h3>
-          <p className="my-10">
+          <p className="my-10 mt-0 leading-7 text-gray-500">
             Telah membantu jutaan alumni dalam masuk universitas yang diingini
             pembangunan lorem lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Suspendisse varius enim in eros elementum tristique

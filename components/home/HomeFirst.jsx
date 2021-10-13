@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import {
   Box,
   Button,
@@ -27,9 +28,11 @@ const HomeFirst = () => {
     <>
       <Box bg="red.600" w="100%" color="white" position="relative">
         <div className="absolute bottom-0 left-20">
-          <svg
+          <motion.svg
+            initial={{ height: 0 }}
+            animate={{ height: 460 }}
+            transition={{ type: "spring", duration: 2, bounce: 0 }}
             width="207"
-            height="460"
             viewBox="0 0 207 460"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -39,12 +42,14 @@ const HomeFirst = () => {
               d="M0 40C0 17.9086 17.9086 0 40 0H167C189.091 0 207 17.9086 207 40V462H0V40Z"
               fill="#991B1B"
             />
-          </svg>
+          </motion.svg>
         </div>
         <div className="absolute bottom-0 left-80">
-          <svg
+          <motion.svg
+            initial={{ height: 0 }}
+            animate={{ height: 344 }}
+            transition={{ type: "spring", duration: 2, bounce: 0 }}
             width="207"
-            height="344"
             viewBox="0 0 207 344"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -54,12 +59,14 @@ const HomeFirst = () => {
               d="M0 40C0 17.9086 17.9086 0 40 0H167C189.091 0 207 17.9086 207 40V346H0V40Z"
               fill="#991B1B"
             />
-          </svg>
+          </motion.svg>
         </div>
         <div className="absolute bottom-0 right-10">
-          <svg
+          <motion.svg
+            initial={{ height: 0 }}
+            animate={{ height: 532 }}
+            transition={{ type: "spring", duration: 2, bounce: 0 }}
             width="207"
-            height="532"
             viewBox="0 0 207 532"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +76,7 @@ const HomeFirst = () => {
               d="M0 40C0 17.9086 17.9086 0 40 0H167C189.091 0 207 17.9086 207 40V532H0V40Z"
               fill="#111827"
             />
-          </svg>
+          </motion.svg>
         </div>
         <div className="font-inter flex px-24 justify-between pt-36 relative">
           <div className="mt-28">

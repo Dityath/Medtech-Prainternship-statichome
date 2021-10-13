@@ -59,7 +59,7 @@ const HomeThird = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             animate={animation}
-            transition={{ type: "spring", duration: 2.6, bounce: 0 }}
+            transition={{ type: "spring", duration: 2, bounce: 0 }}
           >
             <path
               opacity="0.4"
